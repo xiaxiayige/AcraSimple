@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AcraSimple</string>
+    <string name="msg_acra_toast">发生了一个崩溃</string>
+</resources>
