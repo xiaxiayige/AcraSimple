@@ -18,9 +18,9 @@ public class YourOwnSender implements ReportSender {
     public void send(@NonNull Context context, @NonNull CrashReportData crashReportData) throws ReportSenderException {
         //发送邮件
 //        Log.i("YourOwnSender", "send: " + crashReportData.toJSON());
-        Mail mail=new Mail("xiaxiayige@163.com","zhangqilin.0000");
-        mail.set_to(new String[]{"xiaxiayige@163.com"});//接受者邮箱 可以是多个
-        mail.set_from("xiaxiayige@163.com");//邮件来源
+        Mail mail=new Mail("用户名","密码");
+        mail.set_to(new String[]{"接受者邮箱"});//接受者邮箱 可以是多个
+        mail.set_from("发送者邮箱");//邮件来源
         mail.set_subject("错误日志demo");//设置主题标题
         mail.setBody(crashReportData.toString());
         try {
